@@ -1402,6 +1402,9 @@ section.hero {
   z-index: 10;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+.faq__item h3.open {
+  color: #ffffff;
+}
 .faq__item h3:hover {
   background: #a500c1;
   color: #2f0000;
@@ -1432,11 +1435,15 @@ section.hero {
   opacity: 0;
   background: #ffffff;
   color: #333333;
-  padding: 0;
+  padding: 20px 40px;
   transition: all 0.3s ease-in-out;
   font-size: 32px;
 }
-
+.faq__item p.open {
+  transform: translateY(0);
+  height: auto;
+  opacity: 1;
+}
 .about {
   padding-bottom: 70px;
 }

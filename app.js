@@ -26,8 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         var n, c;
         t.preventDefault(),
           (c = (n = e).nextElementSibling),
-          (n.classList = n.classList.contains("open") ? "" : "open"),
-          (c.classList = c.classList.contains("open") ? "close" : "open");
+          (n.classList = n.classList.contains("open")
+            ? "faq__question"
+            : "faq__question open"),
+          (c.classList = c.classList.contains("open")
+            ? "faq__answer"
+            : "faq__answer open");
       });
     });
 });
